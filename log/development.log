@@ -1249,3 +1249,24 @@ Processing by PagesController#comingsoon as HTML
 Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-16 00:10:09 -0600
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-16 00:10:12 -0600
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-16 00:24:05 -0600
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
