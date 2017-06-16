@@ -1,0 +1,83 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+*::selection {
+  background-color: rgba(135, 79, 255, .25);
+}
+
+.wrapper-coming-soon {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  // justify-content: center;
+  padding-left: 10vw;
+  align-items: center;
+  background-color: #FFF;
+}
+
+h1.coming-soon-h1 {
+  font-family: "Source Code Pro";
+  text-transform: none;
+  color: #222;
+}
+
+.keyword {
+  color: #F39;
+}
+
+.operator {
+  color: #C6F;
+}
+
+.arrst {
+  color: #222;
+}
+
+.string {
+  color: #00D364;
+}
+
+.keyvar {
+  color: #00BFFF;
+}
+
+.method {
+  color: #F39;
+}
+
+
+.wireframe-face {
+  transition: height 0.5s;
+}
+
+@media all and (min-width: 1024px) {
+  .wireframe-face {
+    height: 60vh;
+    position: fixed;
+    top: 20vh;
+    right: -5vw;
+  }
+}
+@media all and (max-width: 1023px) {
+  .wrapper-coming-soon {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .wireframe-face {
+    height: 70vh;
+  }
+  .coming-soon-h1 {
+    display: none;
+  }
+}

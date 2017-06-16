@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+
+@import url('https://fonts.googleapis.com/css?family=Overpass:900|Roboto:400,700|Source+Code+Pro');
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
