@@ -97,6 +97,10 @@ h1.coming-soon-h1 {
   justify-content: center;
 }
 
+.maindate-coming-soon::selection {
+  background-color: rgba(135, 79, 255, .25);
+}
+
 @media all and (min-width: 1024px) {
   .wireframe-face {
     height: 60vh;
