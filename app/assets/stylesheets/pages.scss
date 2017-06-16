@@ -95,10 +95,14 @@ h1.coming-soon-h1 {
   width: 100vw;
   display: flex;
   justify-content: center;
-}
 
-.maindate-coming-soon::selection {
-  background-color: rgba(135, 79, 255, .25);
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 @media all and (min-width: 1024px) {

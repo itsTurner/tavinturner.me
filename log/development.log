@@ -1462,3 +1462,25 @@ Processing by PagesController#comingsoon as HTML
 Completed 200 OK in 283ms (Views: 264.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-16 10:32:44 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 267ms (Views: 253.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-16 10:32:51 -0600
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-16 10:34:09 -0600
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.0ms)
+
+
