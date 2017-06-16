@@ -20,6 +20,8 @@ html, body {
   padding-left: 10vw;
   align-items: center;
   background-color: #FFF;
+  animation: coming-soon-ease-in 3s;
+  position: absolute;
 }
 
 h1.coming-soon-h1 {
@@ -79,6 +81,8 @@ h1.coming-soon-h1 {
 
 .wireframe-face {
   transition: height 0.5s;
+  background-image: image-url('Face_Wireframe.png');
+  background-size: cover;
 }
 
 .maindate-coming-soon {
@@ -96,9 +100,10 @@ h1.coming-soon-h1 {
 @media all and (min-width: 1024px) {
   .wireframe-face {
     height: 60vh;
-    position: fixed;
+    width: 60vh;
+    position: absolute;
     top: 20vh;
-    right: -5vw;
+    right: -15vh;
   }
 }
 @media all and (max-width: 1023px) {
@@ -112,8 +117,21 @@ h1.coming-soon-h1 {
   }
   .wireframe-face {
     height: 70vh;
+    width: 70vh;
   }
   .coming-soon-h1 {
     display: none;
+  }
+}
+
+
+@keyframes coming-soon-ease-in {
+  from {
+    opacity: 0;
+    bottom: -100px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
   }
 }
