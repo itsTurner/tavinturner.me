@@ -110,14 +110,14 @@ h1.coming-soon-h1 {
   .wrapper-coming-soon {
     width: 100vw;
     height: 100vh;
-    display: flex;
     padding: 0;
-    justify-content: center;
-    align-items: center;
   }
   .wireframe-face {
-    height: 70vh;
-    width: 70vh;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
   }
   .coming-soon-h1 {
     display: none;
