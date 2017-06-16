@@ -25,10 +25,10 @@ html, body {
 h1.coming-soon-h1 {
   font-family: "Source Code Pro";
   text-transform: none;
-  color: #222;
+  color: #000;
 }
 
-.keyword {
+/*.keyword {
   color: #F39;
 }
 
@@ -50,11 +50,47 @@ h1.coming-soon-h1 {
 
 .method {
   color: #F39;
+} */
+
+.keyword {
+  color: #222;
+}
+
+.operator {
+  color: #444;
+}
+
+.arrst {
+  color: #555;
+}
+
+.string {
+  color: #333;
+}
+
+.keyvar {
+  color: #777;
+}
+
+.method {
+  color: #444;
 }
 
 
 .wireframe-face {
   transition: height 0.5s;
+}
+
+.maindate-coming-soon {
+  font-family: "Roboto";
+  font-weight: 400;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  bottom: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 @media all and (min-width: 1024px) {
