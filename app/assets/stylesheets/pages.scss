@@ -5,11 +5,22 @@
 html, body {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
-*::selection {
-  background-color: rgba(135, 79, 255, .25);
+a {
+
+  color: rgb(135, 79, 255);
+  font-weight: 200;
+  text-decoration: none;
+  border-bottom: 1px dotted rgb(135, 79, 255);
+  transition: all .5s;
+ 
+}
+a:hover {
+
+  color: rgb(241,107,111);
+  border-bottom: 1px dotted rgb(241,107,111);
+
 }
 
 .wrapper-coming-soon {

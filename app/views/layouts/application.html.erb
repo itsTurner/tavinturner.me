@@ -10,7 +10,27 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <% if request.path != "/" %>
+      <div class="leftmenu">  
+	    <%= link_to image_tag("Face_Wireframe.png"), root_path, class: "facehomebuttonthing" %>
+      </div>
+    <% end %>
+    
+    <% if notice %>
+	    <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+	    <p class="alert"><%= alert %></p>
+    <% end %>
+
+
+    <% if request.path != "/" %>
+	  <div class="wrapleft">
+		<%= yield %>  
+	  </div> 
+    <% else %>
+	    <%= yield %>
+    <% end %>
 
     <% if Rails.env.production? %>
       <script>
