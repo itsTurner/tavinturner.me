@@ -2,25 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+  overflow: hidden;
+}
+
 html, body {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
-a {
-
-  color: rgb(135, 79, 255);
-  font-weight: 200;
-  text-decoration: none;
-  border-bottom: 1px dotted rgb(135, 79, 255);
-  transition: all .5s;
- 
-}
-a:hover {
-
-  color: rgb(241,107,111);
-  border-bottom: 1px dotted rgb(241,107,111);
-
+*::selection {
+  background-color: rgba(135, 79, 255, .25);
 }
 
 .wrapper-coming-soon {
@@ -106,14 +99,6 @@ h1.coming-soon-h1 {
   width: 100vw;
   display: flex;
   justify-content: center;
-
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
 }
 
 @media all and (min-width: 1024px) {
