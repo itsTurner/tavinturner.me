@@ -21,8 +21,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use Devise for authorization
 gem 'devise'
-# Pretty editor
-gem 'medium-editor-rails'
+# Red Carpet
+gem 'redcarpet'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

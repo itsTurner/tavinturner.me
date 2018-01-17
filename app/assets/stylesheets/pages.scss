@@ -2,14 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
-  overflow: hidden;
-}
-
 html, body {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
 }
 
 *::selection {
@@ -23,7 +18,7 @@ html, body {
   // justify-content: center;
   padding-left: 10vw;
   align-items: center;
-  background-color: #FFF;
+  background-color: white;
   animation: coming-soon-ease-in 3s;
   position: absolute;
 }
@@ -34,7 +29,7 @@ h1.coming-soon-h1 {
   color: #000;
 }
 
-/*.keyword {
+.keyword {
   color: #F39;
 }
 
@@ -56,36 +51,36 @@ h1.coming-soon-h1 {
 
 .method {
   color: #F39;
-} */
-
-.keyword {
-  color: #222;
 }
-
-.operator {
-  color: #444;
-}
-
-.arrst {
-  color: #555;
-}
-
-.string {
-  color: #333;
-}
-
-.keyvar {
-  color: #777;
-}
-
-.method {
-  color: #444;
-}
+//
+// .keyword {
+//   color: #222;
+// }
+//
+// .operator {
+//   color: #444;
+// }
+//
+// .arrst {
+//   color: #555;
+// }
+//
+// .string {
+//   color: #333;
+// }
+//
+// .keyvar {
+//   color: #777;
+// }
+//
+// .method {
+//   color: #444;
+// }
 
 
 .wireframe-face {
   transition: height 0.5s;
-  background-image: image-url('Face_Wireframe.png');
+  background-image: image-url('Face_Wireframe.svg');
   background-size: cover;
 }
 

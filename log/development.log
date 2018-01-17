@@ -4200,3 +4200,1300 @@ Processing by PagesController#comingsoon as HTML
 Completed 200 OK in 99ms (Views: 96.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-01-16 16:39:01 -0700
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 648ms (Views: 638.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 16:39:04 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (23.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 82ms (Views: 40.3ms | ActiveRecord: 32.9ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 16:39:08 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 81ms (Views: 73.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:39:30 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 24.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:40:02 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:40:04 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:41:52 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 82ms (Views: 77.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:41:55 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:42:01 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:42:03 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:42:04 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:42:47 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:43:21 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:44:58 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:45:03 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 120ms (Views: 117.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:45:04 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 16:45:04 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2018-01-16 16:45:07 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2018-01-16 16:45:53 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `reverse' for #<Enumerator:0x007fe8770b93b8>
+Did you mean?  reverse_each):
+    1: <div class="paddingwrapper">
+    2: 	<% @posts.each.reverse do |post| %>
+    3: 		<%= link_to post do %>
+    4: 		<div class="post">
+    5: 		   	<h4 class="issuenum">Issue <%= post.id %></h4>
+  
+app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb___3638113267372989912_70318195164180'
+Started GET "/posts/" for 127.0.0.1 at 2018-01-16 16:46:02 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 16:46:06 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 16:47:33 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 16:47:33 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 59ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:11:15 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:11:15 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:11:16 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:11:38 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:13:36 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:13:39 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:14:09 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:14:58 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 47ms (Views: 44.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:15:02 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:15:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 173ms (Views: 170.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 17:16:47 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 82ms (Views: 79.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:16:48 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:18:12 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 64.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:18:49 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:21:39 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:21:42 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:21:43 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:21:56 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 85ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:22:02 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:24:05 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:26:43 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 211ms (Views: 208.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:26:53 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:27:18 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 75ms (Views: 72.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:28:58 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 115ms (Views: 112.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:29:13 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:43:15 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 82ms (Views: 79.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:43:16 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:43:25 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:43:33 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 74ms (Views: 72.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:43:39 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:43:57 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:46:03 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:47:13 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:47:22 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:47:53 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:48:40 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:49:53 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 93ms (Views: 90.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:50:01 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:50:06 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:51:05 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:51:40 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:52:00 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:52:07 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:52:38 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 55ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:53:58 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 73ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:54:17 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:54:49 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 124ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:55:22 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:55:44 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:55:50 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:55:56 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:55:59 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 84ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:56:53 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:57:09 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:57:17 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:57:34 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:57:59 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:58:14 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:58:30 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 65ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:58:58 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 17:59:00 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 17:59:02 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 52ms (Views: 44.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 17:59:03 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:01:45 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:01:47 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:01:47 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-01-16 18:01:53 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms) [cache miss]
+  Rendered devise/sessions/new.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 75ms (Views: 57.7ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-01-16 18:01:54 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Oddityi0Mt7EiqoiFq2dz+TSGsbDlrMkXVWwUfbjcb9w6jNZDp1apzqq9gHkkRcBxdjvayoIPOMJetCihOlow==", "user"=>{"email"=>"camelinatardis@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (25.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "camelinatardis@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2018-01-17 01:01:54.985823"], ["sign_in_count", 2], ["updated_at", "2018-01-17 01:01:54.986973"], ["id", 2]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 182ms (ActiveRecord: 30.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 18:01:55 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 18:02:00 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:02:04 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:02:05 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 38.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:02:10 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:02:10 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:02:12 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 32.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:02:14 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:02:15 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 52ms (Views: 46.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 18:02:20 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2018-01-16 18:02:22 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:02:22 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-01-16 18:02:28 -0700
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 18:02:28 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:02:31 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 55ms (Views: 47.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-01-16 18:02:35 -0700
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:02:35 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 48ms (Views: 41.8ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:08:24 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:08:26 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 32.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:10:11 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:10:12 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (4.3ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 50ms (Views: 44.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:12:10 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (1.9ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:12:11 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (1.8ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 39ms (Views: 36.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:12:53 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (1.8ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:13:42 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (2.0ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34ms (Views: 30.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:15:25 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (2.5ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 39ms (Views: 34.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:15:29 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (3.1ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:27:55 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (13.7ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 633ms (Views: 588.0ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:28:31 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (2.4ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 44ms (Views: 39.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:29:39 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (1.8ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:30:35 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (2.1ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 51ms (Views: 47.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:30:36 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (2.0ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:31:30 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (2.1ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 47ms (Views: 41.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:34:07 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (2.5ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 55ms (Views: 48.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:38:00 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (1.9ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 97ms (Views: 78.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 18:38:01 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:38:02 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:38:05 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 31.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 18:38:07 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2018-01-16 18:38:10 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (1.6ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 29ms (Views: 25.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 18:38:27 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:38:28 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/tavin/Desktop/Not School/Code/tt-life/app/views/posts/index.html.erb:7: syntax error, unexpected ',', expecting ')'
+truncate(markdown(post.body)), length: 200) );@output_buffer
+                              ^
+/Users/tavin/Desktop/Not School/Code/tt-life/app/views/posts/index.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/posts/index.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/posts/index.html.erb:19: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:39:06 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:39:33 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2/edit" for 127.0.0.1 at 2018-01-16 18:39:36 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered posts/_form.html.erb (1.9ms) [cache miss]
+  Rendered posts/edit.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/posts/2" for 127.0.0.1 at 2018-01-16 18:39:43 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qiuSZ0JyLSTxs8yKZk7vpaBmJmXPYfrBRK5zRF0sOWdMOIMXuiz6BcaD6RUDMMllRPL5QvUIr1KvFzPECceoog==", "post"=>{"title"=>"Second Post", "body"=>"# Testing testing!\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\n<span class=\"postshowtitle\">POSTNOTE</span>"}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["body", "# Testing testing!\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\n<span class=\"postshowtitle\">POSTNOTE</span>"], ["updated_at", "2018-01-17 01:39:43.731893"], ["id", 2]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 14ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:39:43 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:39:47 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/posts/2" for 127.0.0.1 at 2018-01-16 18:39:59 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qiuSZ0JyLSTxs8yKZk7vpaBmJmXPYfrBRK5zRF0sOWdMOIMXuiz6BcaD6RUDMMllRPL5QvUIr1KvFzPECceoog==", "post"=>{"title"=>"Second Post", "body"=>"Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\n<span class=\"postshowtitle\">POSTNOTE</span>"}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["body", "Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\nTesting testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! Testing testing! \r\n\r\n<hr>\r\n\r\n<span class=\"postshowtitle\">POSTNOTE</span>"], ["updated_at", "2018-01-17 01:39:59.741599"], ["id", 2]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 13ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:39:59 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 18:40:01 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:41:34 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (146.6ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 5.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `markdown' for #<#<Class:0x007fb032838648>:0x007fb032832388>):
+    4: 		<div class="post">
+    5: 		   	<h4 class="issuenum">Issue <%= post.id %></h4>
+    6:    			<h1 class="posttitle"><%= post.title %></h1>
+    7:     			<p class="postpreview"><%= truncate(markdown(post.body), length: 200) %></p>
+    8:     		<% if true == false && current_user.id == 1 %>
+    9:        			<%= link_to 'Edit', edit_post_path(post) %>
+   10: 			<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+app/views/posts/index.html.erb:7:in `block (2 levels) in _app_views_posts_index_html_erb__4017850945402752485_70197369227300'
+app/views/posts/index.html.erb:3:in `block in _app_views_posts_index_html_erb__4017850945402752485_70197369227300'
+app/views/posts/index.html.erb:2:in `reverse_each'
+app/views/posts/index.html.erb:2:in `_app_views_posts_index_html_erb__4017850945402752485_70197369227300'
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:41:46 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:41:49 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (126.8ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `markdown' for #<#<Class:0x007fb032838648>:0x007fb02dc42928>):
+    1: <div class="postcontent">
+    2: 
+    3: <h1>Issue <%= @post.id %>: <span class="postshowtitle"><%= markdown(@post.title) %></span>
+    4: </h1>
+    5: <div class="postbody">
+    6:   <%= @post.body.gsub(/\n/, '<br/>').html_safe %>
+  
+app/views/posts/show.html.erb:3:in `_app_views_posts_show_html_erb___443245950487451722_70197329412280'
+Started GET "/posts/2" for 127.0.0.1 at 2018-01-16 18:41:59 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 22.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2018-01-16 18:42:18 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 67ms (Views: 64.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2018-01-16 18:42:19 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 37.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-16 18:42:29 -0700
+Processing by PagesController#comingsoon as HTML
+  Rendering pages/comingsoon.html.erb within layouts/application
+  Rendered pages/comingsoon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+

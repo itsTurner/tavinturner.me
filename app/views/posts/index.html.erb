@@ -1,5 +1,5 @@
 <div class="paddingwrapper">
-	<% @posts.each do |post| %>
+	<% @posts.reverse_each do |post| %>
 		<%= link_to post do %>
 		<div class="post">
 		   	<h4 class="issuenum">Issue <%= post.id %></h4>
