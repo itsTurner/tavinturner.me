@@ -123,7 +123,6 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
-    pen-rails (0.0.4)
     pg (0.21.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -226,7 +225,6 @@ DEPENDENCIES
   guard-livereload
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  pen-rails
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.1)
