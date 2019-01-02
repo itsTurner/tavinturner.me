@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
-  def comingsoon
+  def index
+  end
+
+  def cursed
   end
 end

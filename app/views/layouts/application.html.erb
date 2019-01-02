@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tavin Turner | Coming Soon</title>
+    <title>An Insult to the Word "Normal"</title>
     <%= csrf_meta_tags %>
 
     <%= favicon_link_tag 'Face_Wireframe.png', type: 'image/png' %>
@@ -11,7 +11,7 @@
 
   <body>
 
-    <% if request.path != "/" %>
+    <% if request.path == "/posts" %>
       <div class="leftmenu">
 	    <%= link_to image_tag("Face_Wireframe.svg"), root_path, class: "facehomebuttonthing" %>
       </div>
@@ -25,9 +25,9 @@
 
 
     <% if request.path != "/" %>
-	  <div class="wrapleft">
-		<%= yield %>
-	  </div>
+  	  <div class="wrapleft">
+  		    <%= yield %>
+  	  </div>
     <% else %>
 	    <%= yield %>
     <% end %>

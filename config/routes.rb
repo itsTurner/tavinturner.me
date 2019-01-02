@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root "pages#comingsoon"
+  root "pages#index"
 
-  resources :pages
+  resources :pages, except: [:cursed]
   resources :posts
   resources :medic
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get '/cursed', to: "pages#cursed"
 end
