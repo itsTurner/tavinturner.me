@@ -13,3 +13,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+window.addEventListener("load", function(){
+  document.querySelector(".blocc").style.display = "none";
+}, false);

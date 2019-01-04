@@ -1,4 +1,9 @@
 @font-face {
-  font-family: Voga;
-  src: url(Voga-Medium.otf);
+    font-family: 'FuturaTEXT';
+    src: url('http://www.studio544-1.nl/wp-content/themes/x-child/framework/fonts/futura/FuturaBT-Bold.woff2') format('woff2'),
+        url('http://www.studio544-1.nl/wp-content/themes/x-child/framework/fonts/futura/FuturaBT-Bold.woff') format('woff'),
+        url('http://www.studio544-1.nl/wp-content/themes/x-child/framework/fonts/futura/FuturaBT-Bold.ttf') format('truetype'),
+        url('http://www.studio544-1.nl/wp-content/themes/x-child/framework/fonts/futura/FuturaBT-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
 }

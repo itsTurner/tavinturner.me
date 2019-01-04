@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
 html, body {
   margin: 0;
@@ -23,10 +23,9 @@ html, body {
   min-height: 100vh;
   overflow-x: hidden;
 
-  background-color: black;
-  color: #eee;
+  color: #212121;
 
-  font-family: "Futura";
+  font-family: "Roboto";
   font-weight: lighter;
 }
 
@@ -48,6 +47,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: black;
+  color: #eee;
 
   .textes {
     margin-right: 5vw;
@@ -60,16 +61,14 @@ header {
   h1 {
     z-index: 4;
     font-size: 25.5vw;
-    margin: auto;
-    text-align: center;
+    margin: 0;
+    font-weight: bold;
   }
   h4 {
     font-size: 5vw;
-    letter-spacing: 13.1vw;
-    margin: auto;
+    letter-spacing: 11vw;
     margin-top: -8vw;
-    margin-right: -13.1vw;
-    text-align: center;
+    margin-right: -11vw;
   }
   .faceimage {
     position: absolute;
@@ -78,6 +77,13 @@ header {
     left: -100px;
     z-index: 1;
   }
+}
+
+.blocc {
+  width: 100vw;
+  height: 100vh;
+  display: fixed;
+  background-color: black;
 }
 
 @keyframes enter {
