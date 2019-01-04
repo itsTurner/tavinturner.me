@@ -13,157 +13,80 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400i,700,700i');
 
-
-@import url('https://fonts.googleapis.com/css?family=Alegreya:400|Overpass:100,900|Roboto:100,400,700|Source+Code+Pro:200,400');
-
-
-/* reset */
 html, body {
-  padding: 0px;
-  margin: 0px;
-  font-family: "Roboto";
-  font-weight: 400;
-}
-
-* {
-  padding: 0;
   margin: 0;
-  transition: all 150ms;
+  padding: 0;
+
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background-color: black;
+  color: #eee;
+
+  font-family: "Futura";
+  font-weight: lighter;
 }
 
-*::selection {
-  background-color: rgba(135, 79, 255, .25);
-}
-
-
-
-/* basics */
-h1 {
-  font-family: "Overpass";
-  font-weight: 900;
-}
-p {
-  font-family: "Roboto";
-  font-weight: 400;
-}
 a {
-  color: inherit;
+  color: rgb(40, 49, 69);
   text-decoration: none;
-  border-bottom: 1pt solid;
+  &:visited {
+    color: rgb(40, 49, 69);
+  }
   &:hover {
-    border-bottom: 2pt solid;
+    color: rgb(40, 49, 69);
   }
 }
 
-/* other */
-.wrapleft {
-  width: 90vw;
-  margin-left: 10vw;
-}
-
-.paddingwrapper {
-  padding: 10px;
-}
-
-.restrictwrapper {
+header {
   width: 100vw;
   height: 100vh;
-
-  background-color: white;
-
-  overflow: hidden;
-}
-
-.facehomebuttonthing {
   position: fixed;
-  display: block;
-  width: 5vw;
-  height: 5vw;
-  top: 3vw;
-  height: 2vw;
-  z-index: 3;
-  border: 0px solid transparent !important;
-}
-.facehomebuttonthing img {
-  width: 10vw;
-  height: 10vw;
-}
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-.leftmenu {
-  position: fixed;
-  width: 10vw;
-  height: 100vh;
-  background-color: #FAFAFA;
-}
-
-@media all and (max-width: 1023px) {
-  .leftmenu {
-    display: none;
+  .textes {
+    margin-right: 5vw;
+    z-index: 4;
+    animation: enter 2s ease-out;
+    opacity: .5;
+    transform: scale(.75);
+    transform-origin: right;
   }
-  .wrapleft {
-    width: 100vw;
-    margin-left: 0;
+  h1 {
+    z-index: 4;
+    font-size: 25.5vw;
+    margin: auto;
+    text-align: center;
+  }
+  h4 {
+    font-size: 5vw;
+    letter-spacing: 13.1vw;
+    margin: auto;
+    margin-top: -8vw;
+    margin-right: -13.1vw;
+    text-align: center;
+  }
+  .faceimage {
+    position: absolute;
+    height: 90vh;
+    top: 5vh;
+    left: -100px;
+    z-index: 1;
   }
 }
 
-
-
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, Fira Sans, Helvetica, sans-serif;
-    font-weight: lighter
-}
-
-a {
-    text-decoration: none;
-    color: #ff4e83;
-    border-bottom: 1px solid #ff4e83
-}
-
-.dictionary {
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    padding: 10vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.75em
-}
-
-.dictionary .spacer {
-    margin-right: 3em
-}
-
-.dictionary .spacer:before {
-    content: " "
-}
-
-.dictionary .pronunciation {
-    color: #ff4e83
-}
-
-.dictionary .definition {
-    padding-left: 2.5vw;
-    font-size: .8em
-}
-
-@media (max-width:700px) {
-    body, html {
-        font-size: 1.5em
-    }
-}
-
-footer.contactfoot {
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0
+@keyframes enter {
+  from {
+    margin-top: 30vh;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0vh;
+    opacity: .5;
+  }
 }

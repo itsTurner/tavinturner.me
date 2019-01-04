@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en">
   <head>
-    <title>An Insult to the Word "Normal"</title>
+    <title><%= if content_for?(:title) then yield(:title) + ' | ' end %>Tavin Turner</title>
     <%= csrf_meta_tags %>
 
     <%= favicon_link_tag 'Face_Wireframe.png', type: 'image/png' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="google" content="notranslate">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tavin Turner">
+    <meta name="description" content="Half human, half disgrace.">
+    <meta name="keywords" content="tavin,tavin turner,stem,tavinio,rails,helix,cyberpatriot helix">
   </head>
 
   <body>
