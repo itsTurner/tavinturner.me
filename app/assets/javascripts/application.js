@@ -14,6 +14,8 @@
 //= require turbolinks
 //= require_tree .
 
-window.addEventListener("load", function(){
-  document.querySelector(".blocc").style.display = "none";
-}, false);
+window.addEventListener('scroll', function(){
+  if (window.scrollY > 110) {
+    document.querySelector('.scrolldown').style.opacity = "0";
+  }
+});

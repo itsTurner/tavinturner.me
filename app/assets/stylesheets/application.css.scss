@@ -13,8 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html, body {
   margin: 0;
   padding: 0;
@@ -26,7 +25,10 @@ html, body {
   color: #212121;
 
   font-family: "Roboto";
-  font-weight: lighter;
+  font-weight: 100;
+}
+* {
+  transition: all 200ms;
 }
 
 a {
@@ -41,14 +43,15 @@ a {
 }
 
 header {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  position: fixed;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background-color: black;
   color: #eee;
+  margin: 0;
 
   .textes {
     margin-right: 5vw;
@@ -73,17 +76,25 @@ header {
   .faceimage {
     position: absolute;
     height: 90vh;
+    max-width: calc(100vw+100px);
     top: 5vh;
     left: -100px;
     z-index: 1;
+    object-fit: cover;
+  }
+  ::selection {
+    background-color: transparent;
   }
 }
 
 .blocc {
   width: 100vw;
   height: 100vh;
-  display: fixed;
-  background-color: black;
+  display: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: red;
 }
 
 @keyframes enter {
@@ -95,4 +106,68 @@ header {
     margin-top: 0vh;
     opacity: .5;
   }
+}
+
+section.mainsect1 {
+  width: 100vw;
+  height: 40vw;
+  background-image: url("psychic.JPG");
+  background-size: cover;
+  background-position: center bottom;
+  margin: 0;
+  color: #333;
+  box-sizing: border-box;
+
+  * {
+    margin: 0;
+  }
+  h1 {
+    margin: 0;
+    position: relative;
+    right: 2vw;
+
+    text-transform: lowercase;
+    font-weight: 100;
+    font-size: 3rem;
+
+    color: #222;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 7vw;
+    color: #111;
+    font-weight: 100;
+  }
+  .whatido {
+    height: 28vw;
+    line-height: 7vw;
+    position: relative;
+    top: 7vw;
+    left: 5vw;
+    mix-blend-mode: difference;
+  }
+}
+
+::selection {
+  background-color: rgba(125, 125, 125, .2);
+}
+
+.scrolldown {
+  position: absolute;
+  left: calc(50vw - 25px);
+  bottom: 5vh;
+  opacity: .8;
+
+  transition: all 1s;
+
+  animation: scroll 2s ease infinite;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(10px);
+	}
 }
