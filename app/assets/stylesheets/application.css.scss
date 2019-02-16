@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,400,700');
 html, body {
   margin: 0;
   padding: 0;
@@ -24,7 +24,7 @@ html, body {
 
   color: #212121;
 
-  font-family: "Roboto";
+  font-family: "Roboto Mono";
   font-weight: 100;
 }
 * {
@@ -108,43 +108,37 @@ header {
   }
 }
 
-section.mainsect1 {
+.whatido {
   width: 100vw;
   height: 100vh;
-  background-image: url("https://i.imgur.com/W3SKJjf.jpg");
   background-size: cover;
   background-position: center bottom;
   margin: 0;
   color: #333;
   box-sizing: border-box;
-
-  * {
-    margin: 0;
-  }
-  h1 {
-    margin: 0;
-    position: relative;
-    right: 2vw;
-
-    text-transform: lowercase;
-    font-weight: 100;
-    font-size: 3rem;
-
-    color: #222;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7vw;
+  
   h2 {
-    text-transform: uppercase;
-    font-size: 7vw;
+    text-transform: lowercase;
     color: #111;
+    font-size: 2em;
     font-weight: 100;
+    margin: 0;
+    display: inline-block;
+    a {
+      width: 86vw;
+    }
+    &:hover, a:hover {
+      color: rgb(255, 34, 87);
+    }
   }
-  .whatido {
-    height: 28vw;
-    line-height: 7vw;
-    position: relative;
-    top: 7vw;
-    left: 5vw;
-    mix-blend-mode: difference;
+  h3 {
+    font-weight: 100;
+    font-size: 1.5em;
+    width: 50vw;
   }
 }
 
