@@ -14,17 +14,15 @@ func determineListenAddress() (string, error) {
   return ":" + port, nil
 }
 
-func hello(w h.ResponseWriter, r *h.Request) {
-  f.Fprintln(w, "Hello World")
-}
-
 func main() {
   addr, err := determineListenAddress()
   if err != nil {
     l.Fatal(err)
   }
-  h.HandleFunc("/", hello)
-  l.Printf("Listening on %s...\n", addr)
+  h.HandleFunc("/", func(w h.ResponseWriter, r *h.Request) {
+    h.ServeFile(w, r, "app/index.html")
+  })
+  h.Handle("/css/", h.StripPrefix("/css/", h.FileServer(h.Dir("app/styles/"))))
   if err := h.ListenAndServe(addr, nil); err != nil {
     panic(err)
   }

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:100,400,700");
+html, body {
+ margin:0;
+ padding:0;
+ width:100vw;
+ min-height:100vh;
+ overflow-x:hidden;
+ color:#212121;
+ font-family:"Roboto Mono";
+ font-weight:100
+}
+* {
+ transition:all 200ms
+}
+a {
+ color:#283145;
+ text-decoration:none
+}
+a:visited {
+ color:#283145
+}
+a:hover {
+ color:#283145
+}
+header {
+ position:relative;
+ width:100vw;
+ height:100vh;
+ display:flex;
+ justify-content:flex-end;
+ align-items:center;
+ background-color:black;
+ color:#eee;
+ margin:0
+}
+header .textes {
+ margin-right:5vw;
+ z-index:4;
+ animation:enter 2s ease-out;
+ opacity:.5;
+ transform:scale(0.75);
+ transform-origin:right
+}
+header h1 {
+ z-index:4;
+ font-size:25.5vw;
+ margin:0;
+ font-weight:bold
+}
+header h4 {
+ font-size:5vw;
+ letter-spacing:11vw;
+ margin-top:-8vw;
+ margin-right:-11vw
+}
+header .faceimage {
+ position:absolute;
+ height:90vh;
+ max-width:calc(100vw+100px);
+ top:5vh;
+ left:-100px;
+ z-index:1;
+ object-fit:cover
+}
+header ::selection {
+ background-color:transparent
+}
+.blocc {
+ width:100vw;
+ height:100vh;
+ display:fixed !important;
+ top:0;
+ left:0;
+ z-index:100;
+ background-color:red
+}
+@keyframes enter {
+ from {
+  margin-top:30vh;
+  opacity:0
+ }
+ to {
+  margin-top:0vh;
+  opacity:.5
+ }
+}
+.whatido {
+ width:100vw;
+ height:100vh;
+ background-size:cover;
+ background-position:center bottom;
+ margin:0;
+ color:#333;
+ box-sizing:border-box;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ padding:7vw
+}
+.whatido h2 {
+ text-transform:lowercase;
+ color:#111;
+ font-size:2em;
+ font-weight:100;
+ margin:0;
+ display:inline-block
+}
+.whatido h2 a {
+ width:86vw
+}
+.whatido h2:hover,
+.whatido h2 a:hover {
+ color:#ff2257
+}
+.whatido h3 {
+ font-weight:100;
+ font-size:1.5em;
+ width:50vw
+}
+::selection {
+ background-color:rgba(125,125,125,0.2)
+}
+.scrolldown {
+ position:absolute;
+ left:calc(50vw - 25px);
+ bottom:5vh;
+ opacity:.8;
+ transition:all 1s;
+ animation:scroll 2s ease infinite
+}
+@keyframes scroll {
+ 0% {
+  transform:translateY(0)
+ }
+ 30% {
+  transform:translateY(10px)
+ }
+}
