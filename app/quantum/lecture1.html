@@ -14,7 +14,7 @@
     <p>Speakers: <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-jay.gambetta">Jay
         Gambetta</a>, <a href="https://www.ibm.com/blogs/research/author/abraham-asfawibm-com/">Abe Asfaw</a></p>
     <p>To start in quantum, we must first see the history of classical.</p>
-    <div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-ZNz78B2SwCUsRgNZ" height="100%"
+    <div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-TDQBVu0SipuQk9L7" height="100%"
         viewBox="0 0 500 268">
         <g></g>
         <g class="grid" transform="translate(75, 218)" fill="none" font-size="10" font-family="sans-serif"
@@ -93,7 +93,7 @@
     <blockquote>
       <p>Nature isn’t classical, so if you want to simulate nature, you need to make a quantum computer.</p>
     </blockquote>
-    <div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-HKl2AQJewGQjolAO" height="100%"
+    <div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-vSsP0aw61HWvdwls" height="100%"
         viewBox="0 0 500 292">
         <g></g>
         <g class="grid" transform="translate(75, 242)" fill="none" font-size="10" font-family="sans-serif"
@@ -1046,7 +1046,7 @@
       <li>Logic gates are the barebone operations that computers use to perform any computation</li>
     </ul>
     <h4 id="truth-tables">Truth tables</h4>
-    <p>Identifies the output of a logical operation based on its inputs; <code>O for output</code></p>
+    <p>Identifies the output of a logical operation based on its inputs.</p>
 
     <table>
       <thead>
@@ -1065,101 +1065,153 @@
         <tr>
           <td>1</td>
           <td>0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>0</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
           <td>1</td>
         </tr>
       </tbody>
     </table>
     <h3 id="bit-gates">1-bit gates</h3>
-    <h4 id="not-gate-bit-flip">NOT Gate: bit flip</h4>
-    <p><img src="http://www.clker.com/cliparts/a/C/i/t/s/H/not-gate-hi.png" alt="NOT Gate" width="100"> or <span
-        class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
-              <semantics>
-                <mrow>
-                  <mi>A</mi>
-                  <mi mathvariant="normal">¬</mi>
-                  <mi>B</mi>
-                </mrow>
-                <annotation encoding="application/x-tex">A \lnot B</annotation>
-              </semantics>
-            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
-                style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
-                class="mord">¬</span><span style="margin-right: 0.05017em;"
-                class="mord mathdefault">B</span></span></span></span></span></p>
+    <ul>
+      <li><strong>NOT Gate: bit flip</strong><br>
+        <img src="http://www.clker.com/cliparts/a/C/i/t/s/H/not-gate-hi.png" alt="NOT Gate" width="100"> or <span
+          class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mi>A</mi>
+                    <mi mathvariant="normal">¬</mi>
+                    <mi>B</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">A \lnot B</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
+                  class="mord">¬</span><span style="margin-right: 0.05017em;"
+                  class="mord mathdefault">B</span></span></span></span></span>
+      </li>
+      <li><strong>FANOUT: copies the bit</strong><br>
+        Schematically: fork from value A to (A A)</li>
+    </ul>
 
     <table>
       <thead>
         <tr>
           <th>A</th>
-          <th>O</th>
+          <th>NOT</th>
+          <th>FANOUT</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>0</td>
           <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>0</td>
-        </tr>
-      </tbody>
-    </table>
-    <h4 id="fanout-copies-the-bit">FANOUT: copies the bit</h4>
-    <p>Schematically: fork from value A to (A A)</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>A</th>
-          <th>O</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>1 1</td>
-        </tr>
-        <tr>
-          <td>0</td>
           <td>0 0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1 1</td>
         </tr>
       </tbody>
     </table>
     <h3 id="bit-gates-1">2-bit gates</h3>
-    <h4 id="and-1-if-a-and-b-are-1-else-0">AND: 1 if A and B are 1, else 0</h4>
-    <p><img src="http://www.clker.com/cliparts/N/A/y/e/G/p/and-gate-hi.png" alt="" width="100"> or <span
-        class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
-              <semantics>
-                <mrow>
-                  <mi>A</mi>
-                  <mo>∧</mo>
-                  <mi>B</mi>
-                </mrow>
-                <annotation encoding="application/x-tex">A\wedge B</annotation>
-              </semantics>
-            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
-                style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
-                class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∧</span><span class="mspace"
-                style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
-                style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.05017em;"
-                class="mord mathdefault">B</span></span></span></span></span></p>
+    <ul>
+      <li>
+        <p><strong>AND: 1 if A and B are 1, else 0</strong><br>
+          <img src="http://www.clker.com/cliparts/N/A/y/e/G/p/and-gate-hi.png" alt="" width="100"> or <span
+            class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                  <semantics>
+                    <mrow>
+                      <mi>A</mi>
+                      <mo>∧</mo>
+                      <mi>B</mi>
+                    </mrow>
+                    <annotation encoding="application/x-tex">A\land B</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
+                    class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∧</span><span
+                    class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span
+                    class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span
+                    style="margin-right: 0.05017em;" class="mord mathdefault">B</span></span></span></span></span><br>
+          Equivalent to bit multiplication in 1-bit
+        </p>
+      </li>
+      <li>
+        <p><strong>OR: 1 if A or B are 1, else 0</strong><br>
+          <img src="http://www.clker.com/cliparts/c/3/u/q/P/A/or-gate-hi.png" alt="" width="100"> or <span
+            class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                  <semantics>
+                    <mrow>
+                      <mi>A</mi>
+                      <mo>∨</mo>
+                      <mi>B</mi>
+                    </mrow>
+                    <annotation encoding="application/x-tex">A\lor B</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
+                    class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∨</span><span
+                    class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span
+                    class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span
+                    style="margin-right: 0.05017em;" class="mord mathdefault">B</span></span></span></span></span><br>
+          Schematically: Rectangle with two inputs, one output, curved arrow head on output side, curved indent on input
+          side
+        </p>
+      </li>
+      <li>
+        <p><strong>XOR: 1 if either but not both A or B are 1, else 0</strong><br>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/XOR_ANSI.svg/800px-XOR_ANSI.svg.png"
+            alt="" width="100"> or <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                  <semantics>
+                    <mrow>
+                      <mi>A</mi>
+                      <mo>⊕</mo>
+                      <mi>B</mi>
+                    </mrow>
+                    <annotation encoding="application/x-tex">A\oplus B</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height: 0.76666em; vertical-align: -0.08333em;"></span><span
+                    class="mord mathdefault">A</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                    class="mbin">⊕</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                  class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span
+                    style="margin-right: 0.05017em;" class="mord mathdefault">B</span></span></span></span></span>
+        </p>
+      </li>
+      <li>
+        <p><strong>NAND: 1 if A and B are not 1, else 0</strong><br>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/NAND_ANSI.svg/140px-NAND_ANSI.svg.png"
+            alt="" width="100"> or <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                  <semantics>
+                    <mrow>
+                      <mi mathvariant="normal">¬</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>A</mi>
+                      <mo>∧</mo>
+                      <mi>B</mi>
+                      <mo stretchy="false">)</mo>
+                    </mrow>
+                    <annotation encoding="application/x-tex">\lnot(A\land B)</annotation>
+                  </semantics>
+                </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                    style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">¬</span><span
+                    class="mopen">(</span><span class="mord mathdefault">A</span><span class="mspace"
+                    style="margin-right: 0.222222em;"></span><span class="mbin">∧</span><span class="mspace"
+                    style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                    style="height: 1em; vertical-align: -0.25em;"></span><span style="margin-right: 0.05017em;"
+                    class="mord mathdefault">B</span><span class="mclose">)</span></span></span></span></span>
+        </p>
+      </li>
+    </ul>
 
     <table>
       <thead>
         <tr>
           <th>A</th>
           <th>B</th>
-          <th>O</th>
+          <th>AND</th>
+          <th>NAND</th>
+          <th>OR</th>
+          <th>XOR</th>
         </tr>
       </thead>
       <tbody>
@@ -1167,122 +1219,31 @@
           <td>0</td>
           <td>0</td>
           <td>0</td>
-        </tr>
-        <tr>
-          <td>0</td>
-          <td>1</td>
-          <td>0</td>
-        </tr>
-        <tr>
           <td>1</td>
           <td>0</td>
           <td>0</td>
         </tr>
         <tr>
+          <td>0</td>
           <td>1</td>
+          <td>0</td>
           <td>1</td>
-          <td>1</td>
-        </tr>
-      </tbody>
-    </table>
-    <blockquote>
-      <p>Equivalent to bit multiplication in 1-bit</p>
-    </blockquote>
-    <h4 id="or-1-if-a-or-b-are-1-else-0">OR: 1 if A or B are 1, else 0</h4>
-    <p><img src="http://www.clker.com/cliparts/c/3/u/q/P/A/or-gate-hi.png" alt="" width="100"> or <span
-        class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
-              <semantics>
-                <mrow>
-                  <mi>A</mi>
-                  <mo>∨</mo>
-                  <mi>B</mi>
-                </mrow>
-                <annotation encoding="application/x-tex">A\lor B</annotation>
-              </semantics>
-            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
-                style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
-                class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∨</span><span class="mspace"
-                style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
-                style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.05017em;"
-                class="mord mathdefault">B</span></span></span></span></span><br>
-      Schematically: Rectangle with two inputs, one output, curved arrow head on output side, curved indent on input
-      side</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>A</th>
-          <th>B</th>
-          <th>O</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td>0</td>
           <td>1</td>
           <td>1</td>
         </tr>
         <tr>
           <td>1</td>
           <td>0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>1</td>
-        </tr>
-      </tbody>
-    </table>
-    <h4 id="xor-1-if-either-but-not-both-a-or-b-are-1-else-0">XOR: 1 if either but not both A or B are 1, else 0</h4>
-    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/XOR_ANSI.svg/800px-XOR_ANSI.svg.png" alt=""
-        width="100"> or <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
-              <semantics>
-                <mrow>
-                  <mi>A</mi>
-                  <mo>⨁</mo>
-                  <mi>B</mi>
-                </mrow>
-                <annotation encoding="application/x-tex">A\bigoplus B</annotation>
-              </semantics>
-            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
-                style="height: 1.00001em; vertical-align: -0.25001em;"></span><span
-                class="mord mathdefault">A</span><span class="mspace" style="margin-right: 0.166667em;"></span><span
-                class="mop op-symbol small-op" style="position: relative; top: -0.000005em;">⨁</span><span
-                class="mspace" style="margin-right: 0.166667em;"></span><span style="margin-right: 0.05017em;"
-                class="mord mathdefault">B</span></span></span></span></span></p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>A</th>
-          <th>B</th>
-          <th>O</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
-        </tr>
-        <tr>
           <td>0</td>
           <td>1</td>
           <td>1</td>
+          <td>1</td>
         </tr>
         <tr>
+          <td>1</td>
+          <td>1</td>
           <td>1</td>
           <td>0</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>1</td>
           <td>1</td>
           <td>0</td>
         </tr>
@@ -1291,8 +1252,8 @@
     <h3 id="universality">Universality</h3>
     <p>Any computational operation can be made by a comination of NOT, AND, OR, FANOUT</p>
     <h4 id="nand-not-and">NAND: NOT AND</h4>
-    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/NAND_ANSI.svg/1920px-NAND_ANSI.svg.png"
-        alt="" height="40"> + <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+    <p>An AND gate may be represented by the expression <span class="katex--inline"><span class="katex"><span
+            class="katex-mathml"><math>
               <semantics>
                 <mrow>
                   <mi mathvariant="normal">¬</mi>
@@ -1302,7 +1263,7 @@
                   <mi>B</mi>
                   <mo stretchy="false">)</mo>
                 </mrow>
-                <annotation encoding="application/x-tex">\lnot(A\wedge B)</annotation>
+                <annotation encoding="application/x-tex">\lnot(A\land B)</annotation>
               </semantics>
             </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
                 style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">¬</span><span
@@ -1310,24 +1271,30 @@
                 style="margin-right: 0.222222em;"></span><span class="mbin">∧</span><span class="mspace"
                 style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
                 style="height: 1em; vertical-align: -0.25em;"></span><span style="margin-right: 0.05017em;"
-                class="mord mathdefault">B</span><span class="mclose">)</span></span></span></span></span><br>
-      An AND gate followed immediately by a NOT gate</p>
+                class="mord mathdefault">B</span><span class="mclose">)</span></span></span></span></span>: an AND gate
+      followed immediately by a NOT gate.</p>
 
     <table>
       <thead>
         <tr>
           <th>A</th>
           <th>B</th>
-          <th>O</th>
+          <th>AND</th>
+          <th>NOT(AND)</th>
+          <th>NAND</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>0</td>
           <td>0</td>
+          <td>0</td>
+          <td>1</td>
           <td>1</td>
         </tr>
         <tr>
+          <td>0</td>
+          <td>1</td>
           <td>0</td>
           <td>1</td>
           <td>1</td>
@@ -1335,11 +1302,15 @@
         <tr>
           <td>1</td>
           <td>0</td>
+          <td>0</td>
+          <td>1</td>
           <td>1</td>
         </tr>
         <tr>
           <td>1</td>
           <td>1</td>
+          <td>1</td>
+          <td>0</td>
           <td>0</td>
         </tr>
       </tbody>
@@ -1394,56 +1365,6 @@
                   </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
                       style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.02778em;"
                       class="mord mathdefault">O</span></span></span></span></span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>0</td>
-          <td>0</td>
-          <td>00</td>
-        </tr>
-        <tr>
-          <td>0</td>
-          <td>1</td>
-          <td>01</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>0</td>
-          <td>01</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>1</td>
-          <td>10</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>or</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
-                    <semantics>
-                      <mrow>
-                        <mi>A</mi>
-                      </mrow>
-                      <annotation encoding="application/x-tex">A</annotation>
-                    </semantics>
-                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
-                      style="height: 0.68333em; vertical-align: 0em;"></span><span
-                      class="mord mathdefault">A</span></span></span></span></span></th>
-          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
-                    <semantics>
-                      <mrow>
-                        <mi>B</mi>
-                      </mrow>
-                      <annotation encoding="application/x-tex">B</annotation>
-                    </semantics>
-                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
-                      style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.05017em;"
-                      class="mord mathdefault">B</span></span></span></span></span></th>
           <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
                     <semantics>
                       <mrow>
@@ -1494,24 +1415,28 @@
         <tr>
           <td>0</td>
           <td>0</td>
+          <td>00</td>
           <td>0</td>
           <td>0</td>
         </tr>
         <tr>
           <td>0</td>
           <td>1</td>
+          <td>01</td>
           <td>0</td>
           <td>1</td>
         </tr>
         <tr>
           <td>1</td>
           <td>0</td>
+          <td>01</td>
           <td>0</td>
           <td>1</td>
         </tr>
         <tr>
           <td>1</td>
           <td>1</td>
+          <td>10</td>
           <td>1</td>
           <td>0</td>
         </tr>
@@ -1638,7 +1563,7 @@
                       <mn>1</mn>
                     </msub>
                   </mrow>
-                  <annotation encoding="application/x-tex">O_1=A_1\wedge B_1</annotation>
+                  <annotation encoding="application/x-tex">O_1=A_1\land B_1</annotation>
                 </semantics>
               </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
                   style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
@@ -1684,13 +1609,13 @@
                       <mi>A</mi>
                       <mn>0</mn>
                     </msub>
-                    <mo>⨁</mo>
+                    <mo>⊕</mo>
                     <msub>
                       <mi>B</mi>
                       <mn>0</mn>
                     </msub>
                   </mrow>
-                  <annotation encoding="application/x-tex">O_0=A_0\bigoplus B_0</annotation>
+                  <annotation encoding="application/x-tex">O_0=A_0\oplus B_0</annotation>
                 </semantics>
               </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
                   style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
@@ -1704,7 +1629,7 @@
                           style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span
                   class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span
                   class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
-                  style="height: 1.00001em; vertical-align: -0.25001em;"></span><span class="mord"><span
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
                     class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
                         class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class=""
                             style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut"
@@ -1712,11 +1637,12 @@
                                 class="mord mtight">0</span></span></span></span><span
                           class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
                           style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span
-                  class="mspace" style="margin-right: 0.166667em;"></span><span class="mop op-symbol small-op"
-                  style="position: relative; top: -0.000005em;">⨁</span><span class="mspace"
-                  style="margin-right: 0.166667em;"></span><span class="mord"><span style="margin-right: 0.05017em;"
-                    class="mord mathdefault">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
-                        class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class=""
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">⊕</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    style="margin-right: 0.05017em;" class="mord mathdefault">B</span><span class="msupsub"><span
+                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                          style="height: 0.301108em;"><span class=""
                             style="top: -2.55em; margin-left: -0.05017em; margin-right: 0.05em;"><span class="pstrut"
                               style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
                                 class="mord mtight">0</span></span></span></span><span
