@@ -1,5 +1,9 @@
 # Web pages
 / app/index.html
 
+# Quantum
+/quantum app/quantum/index.html
+/quantum/1 app/quantum/lecture1.html
+
 # Styles
 /css/* app/styles/

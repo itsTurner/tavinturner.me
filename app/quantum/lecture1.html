@@ -1,0 +1,1816 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 1</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html">
+    <h1 id="pre-lecture-why-quantum">Pre-Lecture: Why Quantum?</h1>
+    <p>Speakers: <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-jay.gambetta">Jay
+        Gambetta</a>, <a href="https://www.ibm.com/blogs/research/author/abraham-asfawibm-com/">Abe Asfaw</a></p>
+    <p>To start in quantum, we must first see the history of classical.</p>
+    <div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-ZNz78B2SwCUsRgNZ" height="100%"
+        viewBox="0 0 500 268">
+        <g></g>
+        <g class="grid" transform="translate(75, 218)" fill="none" font-size="10" font-family="sans-serif"
+          text-anchor="middle">
+          <path class="domain" stroke="#000" d="M0.5,-183V0.5H350.5V-183"></path>
+          <g class="tick" opacity="1" transform="translate(0.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'40</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(44.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'50</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(88.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'60</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(131.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'70</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(175.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'80</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(219.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'90</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(263.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'00</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(306.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'10</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(350.5,0)">
+            <line stroke="#000" y2="-183"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'20</text>
+          </g>
+        </g>
+        <g>
+          <rect x="0" y="48" width="462.5" height="24" class="section section0"></rect>
+          <rect x="0" y="72" width="462.5" height="24" class="section section1"></rect>
+          <rect x="0" y="96" width="462.5" height="24" class="section section1"></rect>
+          <rect x="0" y="120" width="462.5" height="24" class="section section2"></rect>
+          <rect x="0" y="144" width="462.5" height="24" class="section section2"></rect>
+          <rect x="0" y="168" width="462.5" height="24" class="section section2"></rect>
+          <rect x="0" y="192" width="462.5" height="24" class="section section2"></rect>
+        </g>
+        <g>
+          <rect rx="3" ry="3" x="75" y="50" width="44" height="20" class="task  task0"></rect>
+          <rect rx="3" ry="3" x="119" y="74" width="57" height="20" class="task  task1"></rect>
+          <rect rx="3" ry="3" x="163" y="98" width="43" height="20" class="task  task1"></rect>
+          <rect rx="3" ry="3" x="184" y="122" width="75" height="20" class="task  task2"></rect>
+          <rect rx="3" ry="3" x="254" y="146" width="171" height="20" class="task  task2"></rect>
+          <rect rx="3" ry="3" x="259" y="170" width="166" height="20" class="task  task2"></rect>
+          <rect rx="3" ry="3" x="408" y="194" width="17" height="20" class="task  active2"></rect><text font-size="11"
+            x="97" y="63.5" text-height="20" class="taskText taskText0 ">Turing </text><text font-size="11" x="147.5"
+            y="87.5" text-height="20" class="taskText taskText1 ">Transistors </text><text font-size="11" x="184.5"
+            y="111.5" text-height="20" class="taskText taskText1 ">Hopper </text><text font-size="11" x="221.5"
+            y="135.5" text-height="20" class="taskText taskText2 ">Prototypes </text><text font-size="11" x="339.5"
+            y="159.5" text-height="20" class="taskText taskText2 ">Useful Computers </text><text font-size="11" x="342"
+            y="183.5" text-height="20" class="taskText taskText2 ">Application of Computing </text><text font-size="11"
+            x="403" y="207.5" text-height="20" class="taskTextOutsideLeft taskTextOutside2 activeText2">Hitting a Wall
+          </text>
+        </g>
+        <g><text x="10" y="62" class="sectionTitle sectionTitle0">Theory</text><text x="10" y="98"
+            class="sectionTitle sectionTitle1">Development</text><text x="10" y="170"
+            class="sectionTitle sectionTitle2">Practice</text></g>
+        <g class="today">
+          <line x1="428" x2="428" y1="25" y2="243" class="today"></line>
+        </g><text x="250" y="25" class="titleText">Progression of Classical Computing</text>
+      </svg></div>
+    <blockquote>
+      <p>Nature isn’t classical, so if you want to simulate nature, you need to make a quantum computer.</p>
+    </blockquote>
+    <div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-HKl2AQJewGQjolAO" height="100%"
+        viewBox="0 0 500 292">
+        <g></g>
+        <g class="grid" transform="translate(75, 242)" fill="none" font-size="10" font-family="sans-serif"
+          text-anchor="middle">
+          <path class="domain" stroke="#000" d="M0.5,-207V0.5H350.5V-207"></path>
+          <g class="tick" opacity="1" transform="translate(0.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'85</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(39.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'90</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(78.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'95</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(117.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'00</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(156.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'05</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(194.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'10</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(233.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'15</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(272.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'20</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(311.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'25</text>
+          </g>
+          <g class="tick" opacity="1" transform="translate(350.5,0)">
+            <line stroke="#000" y2="-207"></line><text fill="#000" y="3" dy="1em" style="text-anchor: middle;"
+              stroke="none" font-size="10">'30</text>
+          </g>
+        </g>
+        <g>
+          <rect x="0" y="48" width="462.5" height="24" class="section section0"></rect>
+          <rect x="0" y="72" width="462.5" height="24" class="section section0"></rect>
+          <rect x="0" y="96" width="462.5" height="24" class="section section0"></rect>
+          <rect x="0" y="120" width="462.5" height="24" class="section section1"></rect>
+          <rect x="0" y="144" width="462.5" height="24" class="section section1"></rect>
+          <rect x="0" y="168" width="462.5" height="24" class="section section2"></rect>
+          <rect x="0" y="192" width="462.5" height="24" class="section section2"></rect>
+          <rect x="0" y="216" width="462.5" height="24" class="section section2"></rect>
+        </g>
+        <g>
+          <rect rx="3" ry="3" x="75" y="50" width="86" height="20" class="task  task0"></rect>
+          <rect rx="3" ry="3" x="122" y="74" width="62" height="20" class="task  task0"></rect>
+          <rect rx="3" ry="3" x="184" y="98" width="109" height="20" class="task  task0"></rect>
+          <rect rx="3" ry="3" x="254" y="122" width="171" height="20" class="task  task1"></rect>
+          <rect rx="3" ry="3" x="324" y="146" width="101" height="20" class="task  task1"></rect>
+          <rect rx="3" ry="3" x="339" y="170" width="86" height="20" class="task  active2"></rect>
+          <rect rx="3" ry="3" x="347" y="194" width="78" height="20" class="task  active2"></rect>
+          <rect rx="3" ry="3" x="347" y="218" width="78" height="20" class="task  active2"></rect><text font-size="11"
+            x="118" y="63.5" text-height="20" class="taskText taskText0 ">Math + Theory </text><text font-size="11"
+            x="153" y="87.5" text-height="20" class="taskText taskText0 ">First Qubits </text><text font-size="11"
+            x="238.5" y="111.5" text-height="20" class="taskText taskText0 ">Producing Qubits </text><text
+            font-size="11" x="339.5" y="135.5" text-height="20" class="taskText taskText1 ">Quantum Computers
+          </text><text font-size="11" x="374.5" y="159.5" text-height="20" class="taskText taskText1 ">Cloud Quantum
+          </text><text font-size="11" x="382" y="183.5" text-height="20"
+            class="taskText taskText2 activeText2">Advantage </text><text font-size="11" x="386" y="207.5"
+            text-height="20" class="taskText taskText2 activeText2">Understanding </text><text font-size="11" x="386"
+            y="231.5" text-height="20" class="taskText taskText2 activeText2">Programming </text>
+        </g>
+        <g><text x="10" y="86" class="sectionTitle sectionTitle0">Theory</text><text x="10" y="146"
+            class="sectionTitle sectionTitle1">Development</text><text x="10" y="206"
+            class="sectionTitle sectionTitle2">Practice</text></g>
+        <g class="today">
+          <line x1="353" x2="353" y1="25" y2="267" class="today"></line>
+        </g><text x="250" y="25" class="titleText">Progression of Quantum Computing</text>
+      </svg></div>
+    <blockquote>
+      <p>There are still so many questions in quantum that haven’t been answered; sit well with uncertainty.</p>
+    </blockquote>
+    <h3 id="what-comes-in-the-20s">What comes in the 20s?</h3>
+    <ul>
+      <li>Quantum advantage</li>
+      <li>Understanding quantum computing</li>
+      <li>Methods for programming quantum computers</li>
+    </ul>
+    <blockquote>
+      <p>I hope it doesn’t take 50 years to come from math proofs to practice like it did with classical computing.</p>
+    </blockquote>
+    <h4 id="q-what-fields-do-you-need-for-quantum">Q: What fields do you need for Quantum?</h4>
+    <p>The math is fairly simple–just to linear algebra–; aside from that, everything is interdisciplinary and more a
+      problem of novelty.</p>
+    <h1 id="lecture-1-classical-computing">Lecture 1: Classical Computing</h1>
+    <p>Lecturer: <a href="https://equs.mit.edu/amir-karamlou/">Amir Karamlou</a></p>
+    <p>Topics:</p>
+    <ul>
+      <li>History of classical computing</li>
+      <li>Binary representation</li>
+      <li>Boolean logic</li>
+      <li>Algorithmic thinking</li>
+    </ul>
+    <p>Objectives:</p>
+    <ul>
+      <li>Bits</li>
+      <li>Boolean logic</li>
+      <li>Universal computation</li>
+      <li>Reversible computation</li>
+    </ul>
+    <h3 id="what-is-computation">What is computation?</h3>
+    <p>A mathematical calculation that maps inputs to an output based on a set of instructions.</p>
+    <h2 id="number-systems">Number systems</h2>
+    <h4 id="decimals-0-9-base-10">Decimals: 0-9 (base-10)</h4>
+    <ul>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>6</mn>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>6</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>0</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">6 = (6 \times 10^0)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">6</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span
+                  class="mord">6</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1.06411em; vertical-align: -0.25em;"></span><span
+                  class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span
+                      class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span
+                            class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>36</mn>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>3</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>1</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>6</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>0</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">36 = (3 \times 10^1) + (6 \times 10^0)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">3</span><span
+                  class="mord">6</span><span class="mspace" style="margin-right: 0.277778em;"></span><span
+                  class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">3</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">6</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>536</mn>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>5</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>2</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>3</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>1</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>6</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>0</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">536 = (5 \times 10^2) + (3 \times 10^1) + (6 \times 10^0)
+                  </annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">5</span><span
+                  class="mord">3</span><span class="mord">6</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span
+                  class="mord">5</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1.06411em; vertical-align: -0.25em;"></span><span
+                  class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span
+                      class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span
+                            class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">3</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">6</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span></span></span></span></span></li>
+    </ul>
+    <h4 id="binary-0-1-base-2">Binary: 0-1 (base-2)</h4>
+    <blockquote>
+      <p>While we commonly use base-10 for counting, there is no mathematical reason to prefer one base over another</p>
+    </blockquote>
+    <ul>
+      <li>Dec <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>1010</mn>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>3</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>0</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>2</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>1</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>0</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>0</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">1010 =
+                    (1\times10^3)+(0\times10^2)+(1\times10^1)+(0\times10^0)</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">0</span><span class="mord">1</span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span
+                  class="mord">1</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1.06411em; vertical-align: -0.25em;"></span><span
+                  class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span
+                      class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span
+                            class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">3</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span></span></span></span></span></li>
+      <li>Bin <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>1010</mn>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <msup>
+                      <mn>2</mn>
+                      <mn>3</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>0</mn>
+                    <mo>×</mo>
+                    <msup>
+                      <mn>2</mn>
+                      <mn>2</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <msup>
+                      <mn>2</mn>
+                      <mn>1</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>0</mn>
+                    <mo>×</mo>
+                    <msup>
+                      <mn>2</mn>
+                      <mn>0</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>=</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">1010 = (1\times2^3)+(0\times2^2)+(1\times2^1)+(0\times2^0)=
+                  </annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">0</span><span class="mord">1</span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span
+                  class="mord">1</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1.06411em; vertical-align: -0.25em;"></span><span
+                  class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">3</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord"><span
+                    class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span
+                          class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">2</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord"><span
+                    class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span
+                          class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord"><span
+                    class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span
+                          class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.277778em;"></span><span
+                  class="mrel">=</span></span></span></span></span> Dec <span class="katex--inline"><span
+            class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>8</mn>
+                    <mo>+</mo>
+                    <mn>2</mn>
+                    <mo>=</mo>
+                    <mn>10</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">8+2=10</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">8</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">2</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">0</span></span></span></span></span></li>
+    </ul>
+    <p><em>Examples</em></p>
+    <ul>
+      <li>Bin <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>1100</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">1100</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">1</span><span class="mord">0</span><span
+                  class="mord">0</span></span></span></span></span> = Dec <span class="katex--inline"><span
+            class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>12</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">12</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">2</span></span></span></span></span></li>
+      <li>Bin <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>10011</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">10011</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">0</span><span class="mord">0</span><span class="mord">1</span><span
+                  class="mord">1</span></span></span></span></span> = Dec <span class="katex--inline"><span
+            class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>19</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">19</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">9</span></span></span></span></span></li>
+    </ul>
+    <h3 id="arithmetic-operation-with-bits">Arithmetic operation with bits</h3>
+    <h4 id="binary-addition">Binary Addition</h4>
+    <ul>
+      <li>Similar to the decimal addition we’re used to</li>
+      <li>Bits carry over when the sum becomes larger than 2</li>
+    </ul>
+    <p><em>Examples</em></p>
+    <ul>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>0</mn>
+                    <mo>+</mo>
+                    <mn>0</mn>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">0+0=0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">0</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">0</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>0</mn>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">0+1=1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">0</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">1</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>+</mo>
+                    <mn>0</mn>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">1+0=1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">1</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">1</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                    <mo>=</mo>
+                    <mn>10</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">1+1=10</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">1</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">0</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>101</mn>
+                    <mo>+</mo>
+                    <mn>11</mn>
+                    <mo>=</mo>
+                    <mn>1000</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">101+11=1000</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">1</span><span
+                  class="mord">0</span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">+</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">1</span><span class="mspace" style="margin-right: 0.277778em;"></span><span
+                  class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span
+                class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span
+                  class="mord">0</span></span></span></span></span></li>
+    </ul>
+    <h4 id="binary-multiplication">Binary Multiplication</h4>
+    <ul>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>0</mn>
+                    <mo>×</mo>
+                    <mn>0</mn>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">0\times0=0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">0</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">0</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>0</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">0\times1=0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">0</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">0</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <mn>0</mn>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">1\times0=0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">1</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">0</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <mo>=</mo>
+                    <mn>1</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">1\times1=1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">1</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">1</span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>11</mn>
+                    <mo>×</mo>
+                    <mn>11</mn>
+                    <mo>=</mo>
+                    <mn>11</mn>
+                    <mo>+</mo>
+                    <mn>110</mn>
+                    <mo>=</mo>
+                    <mn>1001</mn>
+                  </mrow>
+                  <annotation encoding="application/x-tex">11\times11=11+110=1001</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">1</span><span
+                  class="mord">1</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">1</span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.72777em; vertical-align: -0.08333em;"></span><span class="mord">1</span><span
+                  class="mord">1</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 0.64444em; vertical-align: 0em;"></span><span
+                  class="mord">1</span><span class="mord">1</span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">0</span><span class="mord">0</span><span
+                  class="mord">1</span></span></span></span></span></li>
+    </ul>
+    <h3 id="why-bits">Why bits?</h3>
+    <ul>
+      <li>Easier for building hardware
+        <ul>
+          <li>Far more accurate than analog systems, easier than systems built for base-10</li>
+        </ul>
+      </li>
+      <li>Fast, accurate operations</li>
+    </ul>
+    <h4 id="q-how-do-you-represent-decimals-in-binary">Q: How do you represent decimals in binary?</h4>
+    <ul>
+      <li>Dec <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>12.3</mn>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>1</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>2</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mn>0</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>3</mn>
+                    <mo>×</mo>
+                    <mn>1</mn>
+                    <msup>
+                      <mn>0</mn>
+                      <mrow>
+                        <mo>−</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">12.3 = (1\times10^1)+(2\times10^0)+(3\times10^{-1})
+                  </annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">2</span><span class="mord">.</span><span class="mord">3</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span
+                  class="mord">1</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1.06411em; vertical-align: -0.25em;"></span><span
+                  class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span
+                      class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span
+                            class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">2</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">3</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord">1</span><span
+                  class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight"><span class="mord mtight">−</span><span
+                                  class="mord mtight">1</span></span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span></span></span></span></span></li>
+      <li>Bin <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mn>10.1</mn>
+                    <mo>=</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <msup>
+                      <mn>2</mn>
+                      <mn>1</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>0</mn>
+                    <mo>×</mo>
+                    <msup>
+                      <mn>2</mn>
+                      <mn>0</mn>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                    <mo>+</mo>
+                    <mo stretchy="false">(</mo>
+                    <mn>1</mn>
+                    <mo>×</mo>
+                    <msup>
+                      <mn>2</mn>
+                      <mrow>
+                        <mo>−</mo>
+                        <mn>1</mn>
+                      </mrow>
+                    </msup>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <annotation encoding="application/x-tex">10.1 = (1\times2^1)+(0\times2^0)+(1\times2^{-1})</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.64444em; vertical-align: 0em;"></span><span class="mord">1</span><span
+                  class="mord">0</span><span class="mord">.</span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace"
+                  style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1em; vertical-align: -0.25em;"></span><span class="mopen">(</span><span
+                  class="mord">1</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">×</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1.06411em; vertical-align: -0.25em;"></span><span
+                  class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">0</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord"><span
+                    class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span
+                          class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                  class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+                class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span
+                  class="mopen">(</span><span class="mord">1</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span><span class="mbin">×</span><span class="mspace"
+                  style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.06411em; vertical-align: -0.25em;"></span><span class="mord"><span
+                    class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span
+                          class="vlist" style="height: 0.814108em;"><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight"><span class="mord mtight">−</span><span
+                                  class="mord mtight">1</span></span></span></span></span></span></span></span></span><span
+                  class="mclose">)</span></span></span></span></span></li>
+    </ul>
+    <h2 id="boolean-logic">Boolean logic</h2>
+    <p>Boolean logic maps input bit(s) to output bit(s).</p>
+    <h3 id="logic-gates--truth-tables">Logic gates + truth tables</h3>
+    <ul>
+      <li>Logic gates are the barebone operations that computers use to perform any computation</li>
+    </ul>
+    <h4 id="truth-tables">Truth tables</h4>
+    <p>Identifies the output of a logical operation based on its inputs; <code>O for output</code></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>O</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="bit-gates">1-bit gates</h3>
+    <h4 id="not-gate-bit-flip">NOT Gate: bit flip</h4>
+    <p><img src="http://www.clker.com/cliparts/a/C/i/t/s/H/not-gate-hi.png" alt="NOT Gate" width="100"> or <span
+        class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mi>A</mi>
+                  <mi mathvariant="normal">¬</mi>
+                  <mi>B</mi>
+                </mrow>
+                <annotation encoding="application/x-tex">A \lnot B</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
+                class="mord">¬</span><span style="margin-right: 0.05017em;"
+                class="mord mathdefault">B</span></span></span></span></span></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>A</th>
+          <th>O</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4 id="fanout-copies-the-bit">FANOUT: copies the bit</h4>
+    <p>Schematically: fork from value A to (A A)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>A</th>
+          <th>O</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>1 1</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>0 0</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="bit-gates-1">2-bit gates</h3>
+    <h4 id="and-1-if-a-and-b-are-1-else-0">AND: 1 if A and B are 1, else 0</h4>
+    <p><img src="http://www.clker.com/cliparts/N/A/y/e/G/p/and-gate-hi.png" alt="" width="100"> or <span
+        class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mi>A</mi>
+                  <mo>∧</mo>
+                  <mi>B</mi>
+                </mrow>
+                <annotation encoding="application/x-tex">A\wedge B</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
+                class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∧</span><span class="mspace"
+                style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.05017em;"
+                class="mord mathdefault">B</span></span></span></span></span></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>O</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <blockquote>
+      <p>Equivalent to bit multiplication in 1-bit</p>
+    </blockquote>
+    <h4 id="or-1-if-a-or-b-are-1-else-0">OR: 1 if A or B are 1, else 0</h4>
+    <p><img src="http://www.clker.com/cliparts/c/3/u/q/P/A/or-gate-hi.png" alt="" width="100"> or <span
+        class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mi>A</mi>
+                  <mo>∨</mo>
+                  <mi>B</mi>
+                </mrow>
+                <annotation encoding="application/x-tex">A\lor B</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 0.68333em; vertical-align: 0em;"></span><span class="mord mathdefault">A</span><span
+                class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∨</span><span class="mspace"
+                style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.05017em;"
+                class="mord mathdefault">B</span></span></span></span></span><br>
+      Schematically: Rectangle with two inputs, one output, curved arrow head on output side, curved indent on input
+      side</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>O</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4 id="xor-1-if-either-but-not-both-a-or-b-are-1-else-0">XOR: 1 if either but not both A or B are 1, else 0</h4>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/XOR_ANSI.svg/800px-XOR_ANSI.svg.png" alt=""
+        width="100"> or <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mi>A</mi>
+                  <mo>⨁</mo>
+                  <mi>B</mi>
+                </mrow>
+                <annotation encoding="application/x-tex">A\bigoplus B</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 1.00001em; vertical-align: -0.25001em;"></span><span
+                class="mord mathdefault">A</span><span class="mspace" style="margin-right: 0.166667em;"></span><span
+                class="mop op-symbol small-op" style="position: relative; top: -0.000005em;">⨁</span><span
+                class="mspace" style="margin-right: 0.166667em;"></span><span style="margin-right: 0.05017em;"
+                class="mord mathdefault">B</span></span></span></span></span></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>O</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 id="universality">Universality</h3>
+    <p>Any computational operation can be made by a comination of NOT, AND, OR, FANOUT</p>
+    <h4 id="nand-not-and">NAND: NOT AND</h4>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/NAND_ANSI.svg/1920px-NAND_ANSI.svg.png"
+        alt="" height="40"> + <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mi mathvariant="normal">¬</mi>
+                  <mo stretchy="false">(</mo>
+                  <mi>A</mi>
+                  <mo>∧</mo>
+                  <mi>B</mi>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <annotation encoding="application/x-tex">\lnot(A\wedge B)</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 1em; vertical-align: -0.25em;"></span><span class="mord">¬</span><span
+                class="mopen">(</span><span class="mord mathdefault">A</span><span class="mspace"
+                style="margin-right: 0.222222em;"></span><span class="mbin">∧</span><span class="mspace"
+                style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                style="height: 1em; vertical-align: -0.25em;"></span><span style="margin-right: 0.05017em;"
+                class="mord mathdefault">B</span><span class="mclose">)</span></span></span></span></span><br>
+      An AND gate followed immediately by a NOT gate</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>A</th>
+          <th>B</th>
+          <th>O</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4 id="exercise-binary-adder">Exercise: binary adder</h4>
+    <p>Objective: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mi>A</mi>
+                  <mo>+</mo>
+                  <mi>B</mi>
+                </mrow>
+                <annotation encoding="application/x-tex">A+B</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 0.76666em; vertical-align: -0.08333em;"></span><span
+                class="mord mathdefault">A</span><span class="mspace" style="margin-right: 0.222222em;"></span><span
+                class="mbin">+</span><span class="mspace" style="margin-right: 0.222222em;"></span></span><span
+              class="base"><span class="strut" style="height: 0.68333em; vertical-align: 0em;"></span><span
+                style="margin-right: 0.05017em;" class="mord mathdefault">B</span></span></span></span></span></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                    <semantics>
+                      <mrow>
+                        <mi>A</mi>
+                      </mrow>
+                      <annotation encoding="application/x-tex">A</annotation>
+                    </semantics>
+                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                      style="height: 0.68333em; vertical-align: 0em;"></span><span
+                      class="mord mathdefault">A</span></span></span></span></span></th>
+          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                    <semantics>
+                      <mrow>
+                        <mi>B</mi>
+                      </mrow>
+                      <annotation encoding="application/x-tex">B</annotation>
+                    </semantics>
+                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                      style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.05017em;"
+                      class="mord mathdefault">B</span></span></span></span></span></th>
+          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                    <semantics>
+                      <mrow>
+                        <mi>O</mi>
+                      </mrow>
+                      <annotation encoding="application/x-tex">O</annotation>
+                    </semantics>
+                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                      style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.02778em;"
+                      class="mord mathdefault">O</span></span></span></span></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>00</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>or</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                    <semantics>
+                      <mrow>
+                        <mi>A</mi>
+                      </mrow>
+                      <annotation encoding="application/x-tex">A</annotation>
+                    </semantics>
+                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                      style="height: 0.68333em; vertical-align: 0em;"></span><span
+                      class="mord mathdefault">A</span></span></span></span></span></th>
+          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                    <semantics>
+                      <mrow>
+                        <mi>B</mi>
+                      </mrow>
+                      <annotation encoding="application/x-tex">B</annotation>
+                    </semantics>
+                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                      style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.05017em;"
+                      class="mord mathdefault">B</span></span></span></span></span></th>
+          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                    <semantics>
+                      <mrow>
+                        <msub>
+                          <mi>O</mi>
+                          <mn>1</mn>
+                        </msub>
+                      </mrow>
+                      <annotation encoding="application/x-tex">O_1</annotation>
+                    </semantics>
+                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                      style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                        style="margin-right: 0.02778em;" class="mord mathdefault">O</span><span class="msupsub"><span
+                          class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                              style="height: 0.301108em;"><span class=""
+                                style="top: -2.55em; margin-left: -0.02778em; margin-right: 0.05em;"><span
+                                  class="pstrut" style="height: 2.7em;"></span><span
+                                  class="sizing reset-size6 size3 mtight"><span
+                                    class="mord mtight">1</span></span></span></span><span
+                              class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                              style="height: 0.15em;"><span
+                                class=""></span></span></span></span></span></span></span></span></span></span></th>
+          <th><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                    <semantics>
+                      <mrow>
+                        <msub>
+                          <mi>O</mi>
+                          <mn>0</mn>
+                        </msub>
+                      </mrow>
+                      <annotation encoding="application/x-tex">O_0</annotation>
+                    </semantics>
+                  </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                      style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                        style="margin-right: 0.02778em;" class="mord mathdefault">O</span><span class="msupsub"><span
+                          class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                              style="height: 0.301108em;"><span class=""
+                                style="top: -2.55em; margin-left: -0.02778em; margin-right: 0.05em;"><span
+                                  class="pstrut" style="height: 2.7em;"></span><span
+                                  class="sizing reset-size6 size3 mtight"><span
+                                    class="mord mtight">0</span></span></span></span><span
+                              class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                              style="height: 0.15em;"><span
+                                class=""></span></span></span></span></span></span></span></span></span></span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+    <ol>
+      <li>Apply <code>FANOUT</code> to <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mi>A</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">A</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.68333em; vertical-align: 0em;"></span><span
+                  class="mord mathdefault">A</span></span></span></span></span> and <span class="katex--inline"><span
+            class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <mi>B</mi>
+                  </mrow>
+                  <annotation encoding="application/x-tex">B</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.68333em; vertical-align: 0em;"></span><span style="margin-right: 0.05017em;"
+                  class="mord mathdefault">B</span></span></span></span></span> to produce <span
+          class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <msub>
+                      <mi>A</mi>
+                      <mn>0</mn>
+                    </msub>
+                  </mrow>
+                  <annotation encoding="application/x-tex">A_0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span
+                            class=""></span></span></span></span></span></span></span></span></span></span>, <span
+          class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <msub>
+                      <mi>B</mi>
+                      <mn>0</mn>
+                    </msub>
+                  </mrow>
+                  <annotation encoding="application/x-tex">B_0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    style="margin-right: 0.05017em;" class="mord mathdefault">B</span><span class="msupsub"><span
+                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                          style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: -0.05017em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span
+                            class=""></span></span></span></span></span></span></span></span></span></span>, <span
+          class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <msub>
+                      <mi>A</mi>
+                      <mn>1</mn>
+                    </msub>
+                  </mrow>
+                  <annotation encoding="application/x-tex">A_1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span
+                            class=""></span></span></span></span></span></span></span></span></span></span>, <span
+          class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <msub>
+                      <mi>B</mi>
+                      <mn>1</mn>
+                    </msub>
+                  </mrow>
+                  <annotation encoding="application/x-tex">B_1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    style="margin-right: 0.05017em;" class="mord mathdefault">B</span><span class="msupsub"><span
+                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                          style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: -0.05017em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span
+                            class=""></span></span></span></span></span></span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <msub>
+                      <mi>O</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mn>1</mn>
+                    </msub>
+                    <mo>∧</mo>
+                    <msub>
+                      <mi>B</mi>
+                      <mn>1</mn>
+                    </msub>
+                  </mrow>
+                  <annotation encoding="application/x-tex">O_1=A_1\wedge B_1</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    style="margin-right: 0.02778em;" class="mord mathdefault">O</span><span class="msupsub"><span
+                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                          style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: -0.02778em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span
+                  class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span
+                  class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span><span class="mbin">∧</span><span
+                  class="mspace" style="margin-right: 0.222222em;"></span></span><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    style="margin-right: 0.05017em;" class="mord mathdefault">B</span><span class="msupsub"><span
+                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                          style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: -0.05017em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">1</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span
+                            class=""></span></span></span></span></span></span></span></span></span></span></li>
+      <li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <msub>
+                      <mi>O</mi>
+                      <mn>0</mn>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mn>0</mn>
+                    </msub>
+                    <mo>⨁</mo>
+                    <msub>
+                      <mi>B</mi>
+                      <mn>0</mn>
+                    </msub>
+                  </mrow>
+                  <annotation encoding="application/x-tex">O_0=A_0\bigoplus B_0</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.83333em; vertical-align: -0.15em;"></span><span class="mord"><span
+                    style="margin-right: 0.02778em;" class="mord mathdefault">O</span><span class="msupsub"><span
+                      class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"
+                          style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: -0.02778em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span
+                  class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span
+                  class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut"
+                  style="height: 1.00001em; vertical-align: -0.25001em;"></span><span class="mord"><span
+                    class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span class=""></span></span></span></span></span></span><span
+                  class="mspace" style="margin-right: 0.166667em;"></span><span class="mop op-symbol small-op"
+                  style="position: relative; top: -0.000005em;">⨁</span><span class="mspace"
+                  style="margin-right: 0.166667em;"></span><span class="mord"><span style="margin-right: 0.05017em;"
+                    class="mord mathdefault">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.301108em;"><span class=""
+                            style="top: -2.55em; margin-left: -0.05017em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.15em;"><span
+                            class=""></span></span></span></span></span></span></span></span></span></span></li>
+    </ol>
+    <h3 id="reversibility">Reversibility</h3>
+    <p>Given an output, you can determine the input</p>
+    <ul>
+      <li>Reversible gate: preserves all information</li>
+      <li>Non-reversible gate: loses some information</li>
+    </ul>
+    <blockquote>
+      <p>In quantum computing, <em>all</em> gates have to be reversible, since information has a physical meaning; if
+        you lose information, that energy dissipation destroys your computation</p>
+    </blockquote>
+    <h4 id="is-not-reversible">Is NOT reversible?</h4>
+    <p>Output 1 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mo>→</mo>
+                </mrow>
+                <annotation encoding="application/x-tex">\rightarrow</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 0.36687em; vertical-align: 0em;"></span><span
+                class="mrel">→</span></span></span></span></span> Input 0<br>
+      Output 0 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mo>→</mo>
+                </mrow>
+                <annotation encoding="application/x-tex">\rightarrow</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 0.36687em; vertical-align: 0em;"></span><span
+                class="mrel">→</span></span></span></span></span> Input 1<br>
+      Yes, it is reversible.</p>
+    <h4 id="is-and-reversible">Is AND reversible?</h4>
+    <p>Output 1 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mo>→</mo>
+                </mrow>
+                <annotation encoding="application/x-tex">\rightarrow</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 0.36687em; vertical-align: 0em;"></span><span
+                class="mrel">→</span></span></span></span></span> Input (1 1)<br>
+      Output 0 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+              <semantics>
+                <mrow>
+                  <mo>→</mo>
+                </mrow>
+                <annotation encoding="application/x-tex">\rightarrow</annotation>
+              </semantics>
+            </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                style="height: 0.36687em; vertical-align: 0em;"></span><span
+                class="mrel">→</span></span></span></span></span> Input (0 0), (0 1), or (1 0)</p>
+    <ul>
+      <li>Cannot definitively identify the input in the case where the output is 0</li>
+    </ul>
+    <p>No, it is not reversible.</p>
+    <h2 id="looking-forward">Looking forward</h2>
+    <p>Lab section: boolean algebra, logic circuits<br>
+      Next week: quantum computing in abstract</p>
+    <blockquote>
+      <p>Signed <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math>
+                <semantics>
+                  <mrow>
+                    <msubsup>
+                      <mi mathvariant="normal">Σ</mi>
+                      <mn>0</mn>
+                      <mi mathvariant="normal">∞</mi>
+                    </msubsup>
+                  </mrow>
+                  <annotation encoding="application/x-tex">\Sigma_0^{\infty}</annotation>
+                </semantics>
+              </math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut"
+                  style="height: 0.931438em; vertical-align: -0.248108em;"></span><span class="mord"><span
+                    class="mord">Σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span
+                        class="vlist-r"><span class="vlist" style="height: 0.664392em;"><span class=""
+                            style="top: -2.45189em; margin-left: 0em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight">0</span></span></span><span class=""
+                            style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut"
+                              style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span
+                                class="mord mtight"><span class="mord mtight">∞</span></span></span></span></span><span
+                          class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist"
+                          style="height: 0.248108em;"><span
+                            class=""></span></span></span></span></span></span></span></span></span></span></p>
+    </blockquote>
+  </div>
+</body>
+
+</html>
