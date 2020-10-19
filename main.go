@@ -1,9 +1,8 @@
 package main
 
 import (
-	f "fmt"
+	e "errors"
 	i "io/ioutil"
-	l "log"
 	h "net/http"
 	o "os"
 	s "strings"
@@ -19,22 +18,23 @@ func m(i ...interface{}) []interface{} { return i }
 func determineListenAddress() (string, error) {
 	port := o.Getenv("PORT")
 	if port == "" {
-		return "", f.Errorf("$PORT not set")
+		return "", e.New("$PORT not set")
 	}
 	return ":" + port, nil
 }
 
-func main() {
-	addr, err := determineListenAddress()
+func readFileAsString(path string) (string, error) {
+	bytes, err := i.ReadFile(path)
 	if err != nil {
-		l.Fatal(err)
+		return "", err
 	}
 
-	csvBytes, _ := i.ReadFile("routes.ssv")
-	csvString := string(csvBytes)
+	return string(bytes), nil
+}
 
-	for _, line := range s.Split(csvString, "\n") {
-		parts := s.Split(line, " ")
+func routesFromSSV(fileString string, delimiter string) {
+	for _, line := range s.Split(fileString, "\n") {
+		parts := s.Split(line, delimiter)
 		if len(parts) >= 2 && parts[0][0] != '#' {
 			if parts[0][len(parts[0])-1] == '*' {
 				path := string([]rune(parts[0])[:len(parts[0])-1])
@@ -46,6 +46,20 @@ func main() {
 				})
 			}
 		}
+	}
+}
+
+func main() {
+	routes, err := readFileAsString("routes.ssv")
+	if err != nil {
+		panic(err)
+	}
+
+	routesFromSSV(routes, " ")
+
+	addr, err := determineListenAddress()
+	if err != nil {
+		panic(err)
 	}
 
 	if err := h.ListenAndServe(addr, nil); err != nil {
